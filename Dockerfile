@@ -3,11 +3,6 @@ MAINTAINER JeriChen<jeri.chen0110@gmail.com>
 
 ENV TZ=Asia/Taipei
 
-ADD ./vim/.vimrc /root/.vimrc
-ADD ./vim/.vim/colors/Dev_Delight.vim /root/.vim/colors/Dev_Delight.vim 
-ADD ./vim/.vim/colors/molokai.vim /root/.vim/colors/molokai.vim 
-ADD ./vim/.vim/colors/pyte.vim /root/.vim/colors/pyte.vim
-
 RUN apt-get update && apt-get install -y \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
